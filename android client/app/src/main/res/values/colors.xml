@@ -1,0 +1,7 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="background">#CDDC39</color>
+    <color name="button">#FF5722</color>
+
+</resources>

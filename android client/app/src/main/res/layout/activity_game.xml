@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.bgnalm_apps.michael.ebaynator_client_app.GameActivity"
+    android:background="@color/background"
+    android:focusable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Is the item electric? asdasdasd"
+        android:id="@+id/question_text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:autoText="false"
+        android:textSize="43dp"
+        android:singleLine="false"
+        android:phoneNumber="false"
+        android:password="false"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Probably not"
+        android:id="@+id/prob_not_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:enabled="true"
+        android:minWidth="180dp"
+        android:background="@color/button"
+        android:onClick="buttonClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Probably"
+        android:id="@+id/prob_button"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_above="@+id/prob_not_button"
+        android:layout_centerHorizontal="true"
+        android:minWidth="180dp"
+        android:background="@color/button"
+        android:onClick="buttonClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don&apos;t know"
+        android:id="@+id/dont_know_button"
+        android:textSize="25dp"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_above="@+id/prob_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:minWidth="180dp"
+        android:background="@color/button"
+        android:onClick="buttonClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/no_button"
+        android:textSize="25dp"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_above="@+id/dont_know_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:minWidth="180dp"
+        android:background="@color/button"
+        android:onClick="buttonClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/yes_button"
+        android:textSize="25dp"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:enabled="true"
+        android:minWidth="180dp"
+        android:layout_above="@+id/no_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/button"
+        android:onClick="buttonClick"
+        android:focusable="false" />
+</RelativeLayout>
